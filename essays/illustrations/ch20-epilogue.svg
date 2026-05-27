@@ -1,47 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="黎明之前">
-  <defs>
-    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </radialGradient>
-    <linearGradient id="horizon" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0"/>
-      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.05"/>
-      <stop offset="70%" stop-color="#f43f5e" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.15"/>
-    </linearGradient>
-    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.15"/>
-      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4"/>
-    </filter>
-  </defs>
-  <rect width="1536" height="1024" fill="url(#bg)"/>
-
-  <!-- 地平线 -->
-  <rect x="0" y="550" width="1536" height="474" fill="url(#horizon)"/>
-
-  <!-- 即将升起的太阳 -->
-  <circle cx="768" cy="620" r="120" fill="url(#sunGlow)"/>
-  <circle cx="768" cy="620" r="60" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.3" filter="url(#glow)"/>
-  <circle cx="768" cy="620" r="80" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.15"/>
-
-  <!-- 地平线光芒 -->
-  <line x1="400" y1="550" x2="1136" y2="550" stroke="#f59e0b" stroke-width="0.5" opacity="0.3" filter="url(#glow)"/>
-
-  <!-- 前方的人 -->
-  <g transform="translate(768, 480)" opacity="0.2">
-    <circle cx="0" cy="-40" r="10" fill="none" stroke="#f59e0b" stroke-width="1"/>
-    <line x1="0" y1="-30" x2="0" y2="15" stroke="#f59e0b" stroke-width="1"/>
-    <line x1="0" y1="-5" x2="-15" y2="5" stroke="#f59e0b" stroke-width="0.8"/>
-    <line x1="0" y1="-5" x2="15" y2="5" stroke="#f59e0b" stroke-width="0.8"/>
-    <line x1="0" y1="15" x2="-10" y2="35" stroke="#f59e0b" stroke-width="0.8"/>
-    <line x1="0" y1="15" x2="10" y2="35" stroke="#f59e0b" stroke-width="0.8"/>
-  </g>
-
-  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">持续迭代自己的压缩算法</text>
-  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">终 章</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+<title id="title">终章：准备好自己的模型</title>
+<desc id="desc">信号还在远处，模型已经在灯下醒着。</desc>
+<defs>
+<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
+<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
+<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
+<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
+</defs>
+<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><circle class="fillPaper" cx="520" cy="430" r="33.599999999999994"/><path class="thin" d="M507.4 426.5 h1 M532.6 426.5 h1 M508.8 445.4 Q520 455.2 532.6 444"/><path class="ink" d="M520 465 v105"/><path class="ink" d="M474.5 503.5 C502.5 482.5 537.5 482.5 565.5 503.5"/><path class="ink" d="M520 570 l-49 66.5 M520 570 l52.5 66.5"/><rect class="wash" x="690" y="455" width="260" height="150" rx="28"/><path class="ink" d="M760 455 v-65 h120 v65"/><circle class="redFill" cx="810" cy="530" r="22"/><path class="thin" d="M735 530 h150"/><text x="820" y="665" class="label" text-anchor="middle">调参中</text><circle class="redFill" cx="1130" cy="280" r="30"/><path class="red" d="M1085 330 C1015 405 965 470 925 530"/><path class="thin" d="M1185 270 C1245 215 1315 205 1370 220"/><path class="thin" d="M1175 330 C1230 300 1295 300 1340 330"/><text x="805" y="800" class="caption" text-anchor="middle">信号还没到，模型先醒着。</text></g><text x="768" y="940" class="title" text-anchor="middle">终章：准备好自己的模型</text>
 </svg>

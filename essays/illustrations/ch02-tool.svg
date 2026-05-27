@@ -1,42 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="香农的刀">
-  <defs>
-    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </radialGradient>
-    <linearGradient id="blade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="40%" stop-color="#fef3c7"/>
-      <stop offset="100%" stop-color="#d97706"/>
-    </linearGradient>
-    <radialGradient id="bladeGlow" cx="50%" cy="30%" r="60%">
-      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="bladeGlowFilter">
-      <feGaussianBlur stdDeviation="6"/>
-    </filter>
-  </defs>
-  <rect width="1536" height="1024" fill="url(#bg)"/>
-  <circle cx="768" cy="380" r="180" fill="url(#bladeGlow)"/>
-
-  <!-- 香农的刀 —— 隐喻为一把聚焦的光束/刀 -->
-  <line x1="340" y1="180" x2="1100" y2="400" stroke="#d97706" stroke-width="0.5" opacity="0.2"/>
-  <line x1="340" y1="180" x2="1100" y2="420" stroke="#d97706" stroke-width="0.5" opacity="0.15"/>
-  <line x1="340" y1="180" x2="1100" y2="380" stroke="#d97706" stroke-width="0.5" opacity="0.15"/>
-
-  <!-- 刀体 -->
-  <path d="M340 180 L1100 400 L1100 400 L340 200 Z" fill="url(#blade)" opacity="0.6" filter="url(#bladeGlowFilter)"/>
-  <path d="M340 180 L1100 400" stroke="#f59e0b" stroke-width="2" filter="url(#bladeGlowFilter)"/>
-
-  <!-- 刀锋光晕 -->
-  <circle cx="340" cy="190" r="12" fill="#fef3c7" opacity="0.8" filter="url(#bladeGlowFilter)"/>
-
-  <!-- 刀刃切开的"噪声"纹理 -->
-  <line x1="700" y1="280" x2="720" y2="300" stroke="#475569" stroke-width="1" opacity="0.4"/>
-  <line x1="810" y1="310" x2="830" y2="335" stroke="#475569" stroke-width="1" opacity="0.3"/>
-  <line x1="920" y1="340" x2="940" y2="365" stroke="#475569" stroke-width="1" opacity="0.25"/>
-
-  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">香农给我们的刀</text>
-  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 二 章 · 通 信 的 数 学 理 论</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+<title id="title">第二章：工具</title>
+<desc id="desc">香农的小刀不吓人，但切开的东西很大。</desc>
+<defs>
+<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
+<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
+<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
+<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
+</defs>
+<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><circle class="fillPaper" cx="365" cy="430" r="36"/><path class="thin" d="M351.5 426.25 h1 M378.5 426.25 h1 M353 446.5 Q365 457 378.5 445"/><path class="ink" d="M365 467.5 v112.5"/><path class="ink" d="M365 508.75 C413.75 482.5 447.5 463.75 473.75 437.5"/><path class="ink" d="M365 580 l-52.5 71.25 M365 580 l56.25 71.25"/><path class="wash" d="M580 610 L1050 245 Q1120 230 1160 285 Q1125 355 1040 390 L660 700 Z"/><rect class="redFill" x="500" y="650" width="150" height="70" rx="24" transform="rotate(-40 575 685)"/><path class="thin" d="M700 250 C835 150 1010 170 1045 290"/><path class="thin" d="M735 720 h330 M780 785 h220"/><text x="900" y="760" class="label" text-anchor="middle">更短的编码</text><circle class="redFill" cx="1085" cy="325" r="18"/><text x="345" y="250" class="caption" text-anchor="middle">给你一把刀，别被它朴素的样子骗了。</text></g><text x="768" y="940" class="title" text-anchor="middle">第二章：工具</text>
 </svg>

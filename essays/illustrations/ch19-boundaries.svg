@@ -1,35 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="压缩的边界">
-  <defs>
-    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </radialGradient>
-    <radialGradient id="innerGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.1"/>
-      <stop offset="60%" stop-color="#f59e0b" stop-opacity="0.02"/>
-      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3"/>
-    </filter>
-  </defs>
-  <rect width="1536" height="1024" fill="url(#bg)"/>
-
-  <!-- 边界圆环 -->
-  <circle cx="768" cy="450" r="280" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.15"/>
-  <circle cx="768" cy="450" r="200" fill="none" stroke="#f59e0b" stroke-width="0.8" opacity="0.2"/>
-  <circle cx="768" cy="450" r="120" fill="url(#innerGlow)" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
-
-  <!-- 内部：压缩能解释的 -->
-  <text x="768" y="420" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#f59e0b" opacity="0.6">可压缩的</text>
-  <text x="768" y="460" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="14" fill="#f59e0b" opacity="0.3">框架之内</text>
-
-  <!-- 边界上的四个问号 -->
-  <text x="768" y="152" text-anchor="middle" font-family="'Georgia', serif" font-size="28" fill="#64748b" opacity="0.4">zip?</text>
-  <text x="1068" y="310" text-anchor="middle" font-family="'Georgia', serif" font-size="28" fill="#64748b" opacity="0.4">肌肉记忆?</text>
-  <text x="1068" y="570" text-anchor="middle" font-family="'Georgia', serif" font-size="28" fill="#64748b" opacity="0.4">具身认知?</text>
-  <text x="468" y="450" text-anchor="middle" font-family="'Georgia', serif" font-size="28" fill="#64748b" opacity="0.4">品味?</text>
-
-  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">压缩的边界</text>
-  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 十 九 章</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+<title id="title">第十九章：压缩的边界</title>
+<desc id="desc">好框架会在悬崖边自己刹车。</desc>
+<defs>
+<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
+<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
+<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
+<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
+</defs>
+<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><path class="red" d="M250 720 h835"/><path class="ink" d="M1085 720 l190 -250"/><rect class="wash" x="560" y="430" width="300" height="190" rx="28"/><path class="ink" d="M620 430 v-62 h180 v62"/><path class="thin" d="M710 448 v154"/><text x="710" y="533" class="label" text-anchor="middle">框架</text><path class="thin" d="M665 525 h1 M750 525 h1 M675 575 q35 25 70 0"/><rect class="fillPaper" x="990" y="280" width="280" height="145" rx="16"/><text x="1130" y="335" class="caption" text-anchor="middle">此处开始</text><text x="1130" y="385" class="caption" text-anchor="middle">过度解释</text><path class="red" d="M880 535 C955 515 990 485 1045 425"/><text x="760" y="810" class="caption" text-anchor="middle">好的框架不是万能，是知道哪里该停。</text></g><text x="768" y="940" class="title" text-anchor="middle">第十九章：压缩的边界</text>
 </svg>

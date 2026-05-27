@@ -1,58 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="十篇论文，一条线">
-  <defs>
-    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </radialGradient>
-    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
-      <stop offset="30%" stop-color="#f59e0b"/>
-      <stop offset="70%" stop-color="#06b6d4"/>
-      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.3"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="8"/>
-    </filter>
-  </defs>
-  <rect width="1536" height="1024" fill="url(#bg)"/>
-  <circle cx="768" cy="480" r="340" fill="url(#glow1)"/>
-  
-  <!-- 十篇论文作为发光节点 -->
-  <g filter="url(#glow)">
-    <circle cx="180" cy="420" r="8" fill="#f59e0b"/>
-    <circle cx="330" cy="360" r="8" fill="#f59e0b"/>
-    <circle cx="480" cy="390" r="8" fill="#f59e0b"/>
-    <circle cx="610" cy="320" r="8" fill="#f59e0b"/>
-    <circle cx="740" cy="350" r="8" fill="#f59e0b"/>
-    <circle cx="860" cy="300" r="8" fill="#06b6d4"/>
-    <circle cx="980" cy="340" r="8" fill="#06b6d4"/>
-    <circle cx="1100" cy="380" r="8" fill="#06b6d4"/>
-    <circle cx="1220" cy="420" r="8" fill="#06b6d4"/>
-    <circle cx="1340" cy="460" r="8" fill="#06b6d4"/>
-  </g>
-
-  <!-- 连接线 —— 一条贯穿的线 -->
-  <path d="M180 420 C280 340, 380 440, 480 390 C560 350, 640 300, 740 350 C810 380, 890 280, 980 340 C1050 370, 1130 400, 1220 420 C1280 435, 1320 450, 1340 460" fill="none" stroke="url(#lineGrad)" stroke-width="2" filter="url(#glow)"/>
-  
-  <!-- 汇聚到"理解" -->
-  <circle cx="768" cy="550" r="70" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.4"/>
-  <circle cx="768" cy="550" r="50" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.6"/>
-  <circle cx="768" cy="550" r="32" fill="#f59e0b" opacity="0.1"/>
-  <circle cx="768" cy="550" r="20" fill="#f59e0b" opacity="0.15"/>
-  <text x="768" y="558" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="26" fill="#f59e0b" filter="url(#glow)">理解</text>
-
-  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">十篇论文，一条线</text>
-  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">压 缩 即 理 解</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+<title id="title">序幕：为什么写这本书</title>
+<desc id="desc">十篇论文在深夜里把同一条红线递给作者。</desc>
+<defs>
+<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
+<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
+<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
+<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
+</defs>
+<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><rect class="fillPaper" x="160" y="210" width="170" height="210" rx="14"/><path class="thin" d="M188 255 h114 M188 295 h82 M188 335 h100"/><text x="245" y="390" class="small" text-anchor="middle">Shannon</text><rect class="fillPaper" x="360" y="165" width="170" height="210" rx="14"/><path class="thin" d="M388 210 h114 M388 250 h82 M388 290 h100"/><text x="445" y="345" class="small" text-anchor="middle">Turing</text><rect class="fillPaper" x="560" y="230" width="170" height="210" rx="14"/><path class="thin" d="M588 275 h114 M588 315 h82 M588 355 h100"/><text x="645" y="410" class="small" text-anchor="middle">NN</text><rect class="fillPaper" x="790" y="160" width="170" height="210" rx="14"/><path class="thin" d="M818 205 h114 M818 245 h82 M818 285 h100"/><text x="875" y="340" class="small" text-anchor="middle">Transformer</text><rect class="fillPaper" x="1015" y="225" width="170" height="210" rx="14"/><path class="thin" d="M1043 270 h114 M1043 310 h82 M1043 350 h100"/><text x="1100" y="405" class="small" text-anchor="middle">LLM</text><rect class="wash" x="640" y="560" width="270" height="170" rx="28"/><path class="ink" d="M694 560 v-62 h162 v62"/><path class="thin" d="M775 578 v134"/><text x="775" y="653" class="label" text-anchor="middle">理解</text><circle class="fillPaper" cx="760" cy="270" r="31.200000000000003"/><path class="thin" d="M748.3 266.75 h1 M771.7 266.75 h1 M749.6 284.3 Q760 293.4 771.7 283"/><path class="ink" d="M760 302.5 v97.5"/><path class="ink" d="M717.75 338.25 C743.75 318.75 776.25 318.75 802.25 338.25"/><path class="ink" d="M760 400 l-45.5 61.75 M760 400 l48.75 61.75"/><path class="red" d="M245 430 C455 350 455 665 665 585"/><path class="red" d="M637 569 L665 585 L637 601"/><path class="red" d="M445 380 C567.5 300 567.5 645 690 565"/><path class="red" d="M662 549 L690 565 L662 581"/><path class="red" d="M650 455 C695 375 695 640 740 560"/><path class="red" d="M712 544 L740 560 L712 576"/><path class="red" d="M875 385 C842.5 305 842.5 640 810 560"/><path class="red" d="M782 544 L810 560 L782 576"/><path class="red" d="M1100 445 C987.5 365 987.5 675 875 595"/><path class="red" d="M847 579 L875 595 L847 611"/><text x="760" y="760" class="caption" text-anchor="middle">深夜里，十篇论文终于承认它们在讲同一件事。</text></g><text x="768" y="940" class="title" text-anchor="middle">序幕：为什么写这本书</text>
 </svg>

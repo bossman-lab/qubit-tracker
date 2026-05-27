@@ -1,49 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="为什么不压缩">
-  <defs>
-    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </radialGradient>
-    <linearGradient id="pageGlow" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3"/>
-    </filter>
-  </defs>
-  <rect width="1536" height="1024" fill="url(#bg)"/>
-
-  <!-- 法律文件堆叠 -->
-  <rect x="530" y="260" width="476" height="540" rx="6" fill="none" stroke="#f59e0b" stroke-width="0.8" opacity="0.25"/>
-  <rect x="540" y="270" width="456" height="520" rx="4" fill="url(#pageGlow)" stroke="#f59e0b" stroke-width="0.5" opacity="0.2"/>
-
-  <!-- 文字行 -->
-  <g stroke="#475569" stroke-width="1" opacity="0.3">
-    <line x1="580" y1="320" x2="956" y2="320"/>
-    <line x1="580" y1="345" x2="920" y2="345"/>
-    <line x1="580" y1="370" x2="940" y2="370"/>
-    <line x1="580" y1="395" x2="890" y2="395"/>
-    <line x1="580" y1="420" x2="960" y2="420"/>
-    <line x1="580" y1="445" x2="910" y2="445"/>
-    <line x1="580" y1="470" x2="930" y2="470"/>
-    <line x1="580" y1="495" x2="870" y2="495"/>
-    <line x1="580" y1="520" x2="950" y2="520"/>
-    <line x1="580" y1="545" x2="900" y2="545"/>
-  </g>
-
-  <!-- 关键词发光 -->
-  <text x="580" y="600" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="14" fill="#f43f5e" opacity="0.5">包括但不限于    以下简称    在前述条件下    即</text>
-
-  <!-- 天平符号 -->
-  <g transform="translate(768, 740)" opacity="0.2">
-    <line x1="-40" y1="0" x2="40" y2="0" stroke="#f59e0b" stroke-width="1.5"/>
-    <line x1="0" y1="0" x2="0" y2="-30" stroke="#f59e0b" stroke-width="1.5"/>
-    <circle cx="0" cy="-32" r="3" fill="#f59e0b"/>
-    <path d="M-35 0 L-60 20 L-30 20 Z" fill="none" stroke="#f59e0b" stroke-width="1"/>
-    <path d="M35 0 L60 20 L30 20 Z" fill="none" stroke="#f59e0b" stroke-width="1"/>
-  </g>
-
-  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">为什么不压缩</text>
-  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 十 章 · 法 律</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+<title id="title">第十章：法律</title>
+<desc id="desc">法律把一句话养成一片森林，是因为一片叶子都不能误读。</desc>
+<defs>
+<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
+<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
+<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
+<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
+</defs>
+<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><path class="thin" d="M210 755 h1120"/><circle class="fillPaper" cx="355" cy="480" r="26.400000000000002"/><path class="thin" d="M345.1 477.25 h1 M364.9 477.25 h1 M346.2 492.1 Q355 499.8 364.9 491"/><path class="ink" d="M355 507.5 v82.5"/><path class="ink" d="M355 537.75 C390.75 518.5 415.5 504.75 434.75 485.5"/><path class="ink" d="M355 590 l-38.5 52.25000000000001 M355 590 l41.25 52.25000000000001"/><path class="wash" d="M760 720 V430"/><path class="ink" d="M760 560 C615 460 500 405 360 360 M760 520 C915 400 1050 360 1200 330 M760 645 C615 620 500 640 360 690 M760 625 C920 650 1045 690 1210 735"/><rect class="fillPaper" x="275" y="300" width="170" height="105" rx="14"/><path class="thin" d="M303 345 h114 M303 385 h82 M303 425 h100"/><text x="360" y="375" class="small" text-anchor="middle">例外</text><rect class="fillPaper" x="1110" y="270" width="190" height="110" rx="14"/><path class="thin" d="M1138 315 h134 M1138 355 h102 M1138 395 h120"/><text x="1205" y="350" class="small" text-anchor="middle">但不限于</text><rect class="fillPaper" x="270" y="640" width="190" height="110" rx="14"/><path class="thin" d="M298 685 h134 M298 725 h102 M298 765 h120"/><text x="365" y="720" class="small" text-anchor="middle">前述条件</text><rect class="fillPaper" x="1110" y="680" width="190" height="110" rx="14"/><path class="thin" d="M1138 725 h134 M1138 765 h102 M1138 805 h120"/><text x="1205" y="760" class="small" text-anchor="middle">救济</text><text x="760" y="370" class="label" text-anchor="middle">把房子租给你</text><circle class="redFill" cx="835" cy="530" r="34"/><text x="835" y="533" class="small" text-anchor="middle">印</text> <text x="755" y="830" class="caption" text-anchor="middle">一句话长成森林，不是啰嗦，是怕误读。</text></g><text x="768" y="940" class="title" text-anchor="middle">第十章：法律</text>
 </svg>

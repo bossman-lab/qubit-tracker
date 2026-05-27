@@ -1,46 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="终极压缩算法">
-  <defs>
-    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </radialGradient>
-    <linearGradient id="dnaGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.8"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3"/>
-    </filter>
-  </defs>
-  <rect width="1536" height="1024" fill="url(#bg)"/>
-
-  <!-- DNA 螺旋 -->
-  <path d="M550 200 C750 280, 750 320, 550 400 C350 480, 350 520, 550 600 C750 680, 750 720, 550 800" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.4" filter="url(#glow)"/>
-  <path d="M986 200 C786 280, 786 320, 986 400 C1186 480, 1186 520, 986 600 C786 680, 786 720, 986 800" fill="none" stroke="#f43f5e" stroke-width="2" opacity="0.4" filter="url(#glow)"/>
-
-  <!-- 碱基对 -->
-  <g stroke="url(#dnaGrad)" stroke-width="1.5" opacity="0.5">
-    <line x1="570" y1="260" x2="962" y2="260"/>
-    <line x1="544" y1="340" x2="980" y2="340"/>
-    <line x1="544" y1="460" x2="980" y2="460"/>
-    <line x1="570" y1="540" x2="962" y2="540"/>
-    <line x1="570" y1="660" x2="962" y2="660"/>
-    <line x1="544" y1="740" x2="980" y2="740"/>
-  </g>
-
-  <!-- 碱基标签 -->
-  <text x="510" y="265" font-family="'Georgia', serif" font-size="16" fill="#06b6d4" opacity="0.6">A</text>
-  <text x="1005" y="265" font-family="'Georgia', serif" font-size="16" fill="#f43f5e" opacity="0.6">T</text>
-  <text x="515" y="345" font-family="'Georgia', serif" font-size="16" fill="#06b6d4" opacity="0.6">G</text>
-  <text x="1005" y="345" font-family="'Georgia', serif" font-size="16" fill="#f43f5e" opacity="0.6">C</text>
-  <text x="515" y="465" font-family="'Georgia', serif" font-size="16" fill="#06b6d4" opacity="0.6">C</text>
-  <text x="1005" y="465" font-family="'Georgia', serif" font-size="16" fill="#f43f5e" opacity="0.6">G</text>
-
-  <!-- 底部：750MB -->
-  <rect x="600" y="730" width="336" height="40" rx="6" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.3"/>
-  <text x="768" y="757" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#f59e0b" opacity="0.4">30亿碱基对 ≈ 750MB</text>
-
-  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">终极压缩算法</text>
-  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 十 六 章 · 进 化</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+<title id="title">第十六章：进化</title>
+<desc id="desc">自然选择像教练，从不鼓掌，只调损失函数。</desc>
+<defs>
+<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
+<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
+<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
+<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
+</defs>
+<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><path class="red" d="M545 235 C760 390 760 570 545 735 M990 235 C780 390 780 570 990 735"/><path class="thin" d="M625 310 h285 M665 405 h205 M665 565 h205 M625 660 h285"/><rect class="wash" x="360" y="745" width="850" height="75" rx="38"/><circle class="fillPaper" cx="1190" cy="330" r="21.6"/><path class="thin" d="M1181.9 327.75 h1 M1198.1 327.75 h1 M1182.8 339.9 Q1190 346.2 1198.1 339"/><path class="ink" d="M1190 352.5 v67.5"/><path class="ink" d="M1190 377.25 C1219.25 361.5 1239.5 350.25 1255.25 334.5"/><path class="ink" d="M1190 420 l-31.5 42.75 M1190 420 l33.75 42.75"/><circle class="redFill" cx="1265" cy="290" r="25"/><text x="785" y="855" class="label" text-anchor="middle">自然选择跑步机</text> <text x="1165" y="520" class="label" text-anchor="middle">loss</text></g><text x="768" y="940" class="title" text-anchor="middle">第十六章：进化</text>
 </svg>

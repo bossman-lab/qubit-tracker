@@ -1,31 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="理解是什么意思">
-  <defs>
-    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </radialGradient>
-    <radialGradient id="unknown" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="qGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#f43f5e"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4"/>
-    </filter>
-  </defs>
-  <rect width="1536" height="1024" fill="url(#bg)"/>
-  <circle cx="768" cy="460" r="200" fill="url(#unknown)"/>
-
-  <!-- 大问号 -->
-  <text x="740" y="520" text-anchor="middle" font-family="'Georgia', serif" font-size="300" fill="url(#qGrad)" filter="url(#glow)" opacity="0.8">?</text>
-
-  <!-- 外部光晕环 -->
-  <circle cx="768" cy="460" r="160" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.15"/>
-  <circle cx="768" cy="460" r="180" fill="none" stroke="#f59e0b" stroke-width="0.3" opacity="0.1"/>
-
-  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">"理解"是什么意思</text>
-  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 一 章</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+<title id="title">第一章：问题</title>
+<desc id="desc">理解不是回答“懂了”，而是在陌生处还能走对一步。</desc>
+<defs>
+<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
+<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
+<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
+<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
+</defs>
+<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><circle class="fillPaper" cx="420" cy="410" r="43.2"/><path class="thin" d="M403.8 405.5 h1 M436.2 405.5 h1 M405.6 429.8 Q420 442.4 436.2 428"/><path class="ink" d="M420 455 v135"/><path class="ink" d="M361.5 504.5 C397.5 477.5 442.5 477.5 478.5 504.5"/><path class="ink" d="M420 590 l-63 85.5 M420 590 l67.5 85.5"/><rect class="wash" x="640" y="260" width="470" height="300" rx="34"/><circle class="redFill" cx="1015" cy="335" r="38"/><path class="thin" d="M700 345 h210 M700 410 h250"/><path class="ink" d="M760 560 v120 h290 v-120"/><text x="905" y="630" class="label" text-anchor="middle">新情境</text><text x="420" y="690" class="caption" text-anchor="middle">我懂了。</text><path class="red" d="M560 515 C610 510 640 505 675 490"/><text x="890" y="220" class="caption" text-anchor="middle">机器只问：下一步会怎样？</text></g><text x="768" y="940" class="title" text-anchor="middle">第一章：问题</text>
 </svg>
