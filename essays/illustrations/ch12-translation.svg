@@ -1,7 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="两台榨汁机">
-  <rect width="1536" height="1024" fill="#f7f3ed"/>
-  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="260" y="320" width="300" height="300" rx="35"/><rect x="980" y="320" width="300" height="300" rx="35"/><path d="M560 465 C690 400 820 400 980 465"/><path d="M560 520 C700 610 840 610 980 520"/><circle cx="770" cy="675" r="18" fill="#d14b3f" stroke="none"/><text x="770" y="725" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#d14b3f" stroke="none">诗</text><text x="410" y="675" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="36" fill="#1f2328" stroke="none">源语言</text><text x="1130" y="675" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="36" fill="#1f2328" stroke="none">目标语言</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="跨模型通信的极限">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <linearGradient id="langA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="langB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <!-- 中文字符 -->
+  <g transform="translate(380, 380)" opacity="0.7">
+    <text font-family="'Noto Serif SC', 'Songti SC', serif" font-size="80" fill="#f59e0b" filter="url(#glow)">意</text>
   </g>
-  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">两台榨汁机</text>
+
+  <!-- 英文单词 -->
+  <g transform="translate(940, 380)" opacity="0.7">
+    <text font-family="'Georgia', serif" font-size="72" fill="#06b6d4" filter="url(#glow)" font-style="italic">meaning</text>
+  </g>
+
+  <!-- 中间的"意义空间" -->
+  <ellipse cx="768" cy="450" rx="120" ry="80" fill="none" stroke="#f59e0b" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.3"/>
+  <text x="768" y="458" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#f59e0b" opacity="0.4">意义空间</text>
+
+  <!-- 解码和编码路径 -->
+  <path d="M430 380 C500 380, 550 450, 660 450" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,3" fill="none" opacity="0.4"/>
+  <text x="520" y="420" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="12" fill="#f59e0b" opacity="0.3">解压缩</text>
+
+  <path d="M870 450 C980 450, 1020 380, 1090 380" stroke="#06b6d4" stroke-width="1" stroke-dasharray="3,3" fill="none" opacity="0.4"/>
+  <text x="1000" y="420" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="12" fill="#06b6d4" opacity="0.3">重新压缩</text>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">跨模型通信的极限</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 十 二 章 · 翻 译</text>
 </svg>
