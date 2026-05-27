@@ -1,7 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="第 37 手从锅里冒出来">
-  <rect width="1536" height="1024" fill="#f7f3ed"/>
-  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M500 520h540l-60 180H560z"/><path d="M455 520h630"/><path d="M575 455 C540 390 620 370 595 300M740 455 C705 380 805 360 770 290M910 455 C875 380 980 360 945 290"/><circle cx="770" cy="405" r="48" fill="#d14b3f" stroke="none"/><text x="770" y="420" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="white" stroke="none">37</text><circle cx="650" cy="600" r="30"/><circle cx="850" cy="610" r="30"/>
-  </g>
-  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">第 37 手从锅里冒出来</text>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="eruptGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.15"/>
+      <stop offset="40%" stop-color="#f43f5e" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.4"/>
+      <stop offset="80%" stop-color="#f43f5e" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#fef3c7" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <circle cx="768" cy="420" r="200" fill="url(#eruptGlow)"/>
+
+  <!-- 涌现的火焰/光柱 -->
+  <path d="M550 550 C580 480, 600 400, 650 350 C680 320, 720 300, 768 280 C816 300, 856 320, 886 350 C936 400, 956 480, 986 550 Z" fill="url(#flame)" filter="url(#glow)"/>
+
+  <!-- 星点 -->
+  <circle cx="700" cy="320" r="3" fill="#fef3c7" opacity="0.8"/>
+  <circle cx="830" cy="340" r="2" fill="#fef3c7" opacity="0.6"/>
+  <circle cx="760" cy="260" r="4" fill="#fef3c7" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="650" cy="380" r="2" fill="#f59e0b" opacity="0.5"/>
+  <circle cx="880" cy="390" r="2" fill="#f59e0b" opacity="0.5"/>
+
+  <!-- 底部压缩层 -->
+  <rect x="520" y="550" width="496" height="80" rx="8" fill="none" stroke="#475569" stroke-width="1" opacity="0.4"/>
+  <text x="768" y="597" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#475569">大量压缩</text>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">第 37 手从锅里冒出来</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 八 章 · 涌 现</text>
 </svg>
