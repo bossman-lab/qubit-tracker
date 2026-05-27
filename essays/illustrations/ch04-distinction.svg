@@ -1,7 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="存档怪兽与理解小人">
-  <rect width="1536" height="1024" fill="#f7f3ed"/>
-  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="310" y="170" width="390" height="560" rx="26"/><path d="M310 310h390M310 450h390M310 590h390"/><circle cx="520" cy="820" r="0"/><path d="M810 700h390v-120h-390z"/><path d="M890 580v-95h230v95"/><circle cx="1005" cy="640" r="28" fill="#d14b3f" stroke="none"/><text x="1005" y="652" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="28" fill="white" stroke="none">model</text><path d="M735 730h470"/>
-  </g>
-  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">存档怪兽与理解小人</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="存档与理解">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <linearGradient id="zipGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="brainGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 四 章 · 存 档 · 知 识 · 理 解</text>
+
+  <!-- 左侧：存档（zip文件） -->
+  <rect x="280" y="300" width="160" height="190" rx="12" fill="url(#zipGrad)" stroke="#475569" stroke-width="1"/>
+  <line x1="320" y1="330" x2="400" y2="330" stroke="#64748b" stroke-width="2"/>
+  <line x1="320" y1="350" x2="380" y2="350" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="320" y1="370" x2="390" y2="370" stroke="#64748b" stroke-width="1.5"/>
+  <path d="M370 300 L370 270 L440 270 L440 300" stroke="#475569" stroke-width="1.5" fill="none"/>
+  <text x="360" y="520" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="20" fill="#64748b">存档</text>
+
+  <!-- 中间：知识 -->
+  <rect x="660" y="280" width="200" height="230" rx="16" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <circle cx="760" cy="340" r="16" fill="#f59e0b" opacity="0.15"/>
+  <circle cx="700" cy="390" r="12" fill="#06b6d4" opacity="0.12"/>
+  <circle cx="810" cy="380" r="14" fill="#f59e0b" opacity="0.1"/>
+  <circle cx="730" cy="440" r="10" fill="#06b6d4" opacity="0.15"/>
+  <circle cx="790" cy="430" r="8" fill="#f59e0b" opacity="0.08"/>
+  <text x="760" y="540" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="20" fill="#f59e0b">知识</text>
+
+  <!-- 右侧：理解 —— 发光 -->
+  <circle cx="1240" cy="395" r="80" fill="url(#brainGrad)"/>
+  <circle cx="1240" cy="395" r="60" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.5" filter="url(#glow)"/>
+  <circle cx="1240" cy="395" r="40" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.3"/>
+  <text x="1240" y="540" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="20" fill="#fef3c7">理解</text>
+
+  <!-- 箭头连接 -->
+  <path d="M440 395 C520 395, 580 395, 660 395" stroke="#475569" stroke-width="1" stroke-dasharray="4,4" fill="none" opacity="0.3"/>
+  <path d="M860 395 C980 395, 1060 395, 1160 395" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4,4" fill="none" opacity="0.3"/>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">存档 ≠ 知识 ≠ 理解</text>
 </svg>
