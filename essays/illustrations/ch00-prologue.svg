@@ -1,7 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="十篇论文，一根线">
-  <rect width="1536" height="1024" fill="#f7f3ed"/>
-  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="250" y="210" width="150" height="190" rx="8"/><rect x="430" y="170" width="150" height="190" rx="8"/><rect x="610" y="220" width="150" height="190" rx="8"/><rect x="790" y="165" width="150" height="190" rx="8"/><rect x="970" y="215" width="150" height="190" rx="8"/><rect x="620" y="530" width="300" height="190" rx="28"/><path d="M675 530v-70h190v70"/><path d="M325 405 C440 505 525 555 620 610"/><path d="M505 365 C565 460 615 500 670 530"/><path d="M685 415 C700 470 720 500 745 530"/><path d="M865 360 C845 430 825 480 795 530"/><path d="M1045 410 C970 505 910 550 870 610"/><circle cx="770" cy="625" r="34" fill="#d14b3f" stroke="none"/><text x="770" y="637" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="36" fill="white" stroke="none">理解</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="十篇论文，一条线">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+      <stop offset="30%" stop-color="#f59e0b"/>
+      <stop offset="70%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <circle cx="768" cy="480" r="340" fill="url(#glow1)"/>
+  
+  <!-- 十篇论文作为发光节点 -->
+  <g filter="url(#glow)">
+    <circle cx="180" cy="420" r="8" fill="#f59e0b"/>
+    <circle cx="330" cy="360" r="8" fill="#f59e0b"/>
+    <circle cx="480" cy="390" r="8" fill="#f59e0b"/>
+    <circle cx="610" cy="320" r="8" fill="#f59e0b"/>
+    <circle cx="740" cy="350" r="8" fill="#f59e0b"/>
+    <circle cx="860" cy="300" r="8" fill="#06b6d4"/>
+    <circle cx="980" cy="340" r="8" fill="#06b6d4"/>
+    <circle cx="1100" cy="380" r="8" fill="#06b6d4"/>
+    <circle cx="1220" cy="420" r="8" fill="#06b6d4"/>
+    <circle cx="1340" cy="460" r="8" fill="#06b6d4"/>
   </g>
-  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">十篇论文，一根线</text>
+
+  <!-- 连接线 —— 一条贯穿的线 -->
+  <path d="M180 420 C280 340, 380 440, 480 390 C560 350, 640 300, 740 350 C810 380, 890 280, 980 340 C1050 370, 1130 400, 1220 420 C1280 435, 1320 450, 1340 460" fill="none" stroke="url(#lineGrad)" stroke-width="2" filter="url(#glow)"/>
+  
+  <!-- 汇聚到"理解" -->
+  <circle cx="768" cy="550" r="70" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="768" cy="550" r="50" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.6"/>
+  <circle cx="768" cy="550" r="32" fill="#f59e0b" opacity="0.1"/>
+  <circle cx="768" cy="550" r="20" fill="#f59e0b" opacity="0.15"/>
+  <text x="768" y="558" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="26" fill="#f59e0b" filter="url(#glow)">理解</text>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">十篇论文，一条线</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">压 缩 即 理 解</text>
 </svg>
