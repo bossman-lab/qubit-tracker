@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="老师调学习率">
+  <rect width="1536" height="1024" fill="#f7f3ed"/>
+  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="430" y="320" width="680" height="340" rx="28"/><path d="M520 420h500M520 520h500M520 620h500"/><circle cx="650" cy="420" r="24" fill="#d14b3f" stroke="none"/><circle cx="860" cy="520" r="24" fill="#d14b3f" stroke="none"/><circle cx="570" cy="620" r="24" fill="#d14b3f" stroke="none"/><circle cx="250" cy="345" r="45"/><path d="M250 390v180M210 465h80"/><text x="760" y="285" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="42" fill="#1f2328" stroke="none">learning rate</text>
+  </g>
+  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">老师调学习率</text>
+</svg>

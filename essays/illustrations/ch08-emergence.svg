@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="第 37 手从锅里冒出来">
+  <rect width="1536" height="1024" fill="#f7f3ed"/>
+  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M500 520h540l-60 180H560z"/><path d="M455 520h630"/><path d="M575 455 C540 390 620 370 595 300M740 455 C705 380 805 360 770 290M910 455 C875 380 980 360 945 290"/><circle cx="770" cy="405" r="48" fill="#d14b3f" stroke="none"/><text x="770" y="420" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="white" stroke="none">37</text><circle cx="650" cy="600" r="30"/><circle cx="850" cy="610" r="30"/>
+  </g>
+  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">第 37 手从锅里冒出来</text>
+</svg>

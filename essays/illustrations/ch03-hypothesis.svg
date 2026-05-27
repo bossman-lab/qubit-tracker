@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="有损但靠谱">
+  <rect width="1536" height="1024" fill="#f7f3ed"/>
+  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="650" cy="330" r="55"/><path d="M650 385v220M560 470h180M650 605l-90 115M650 605l100 115"/><rect x="490" y="420" width="135" height="165" rx="35"/><path d="M1030 300l-60 270 220-40 55-250z"/><path d="M1005 505 L1120 405 L1215 455" stroke="#d14b3f"/><circle cx="455" cy="650" r="10"/><circle cx="415" cy="700" r="10"/><circle cx="505" cy="735" r="10"/>
+  </g>
+  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">有损但靠谱</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="存档怪兽与理解小人">
+  <rect width="1536" height="1024" fill="#f7f3ed"/>
+  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="310" y="170" width="390" height="560" rx="26"/><path d="M310 310h390M310 450h390M310 590h390"/><circle cx="520" cy="820" r="0"/><path d="M810 700h390v-120h-390z"/><path d="M890 580v-95h230v95"/><circle cx="1005" cy="640" r="28" fill="#d14b3f" stroke="none"/><text x="1005" y="652" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="28" fill="white" stroke="none">model</text><path d="M735 730h470"/>
+  </g>
+  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">存档怪兽与理解小人</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="DNA 健身房">
+  <rect width="1536" height="1024" fill="#f7f3ed"/>
+  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M520 260 C760 420 760 580 520 740M1010 260 C770 420 770 580 1010 740"/><path d="M610 335h310M655 430h220M655 570h220M610 665h310"/><rect x="360" y="760" width="820" height="70" rx="35"/><circle cx="1120" cy="360" r="25" fill="#d14b3f" stroke="none"/><text x="1120" y="372" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="32" fill="white" stroke="none">!</text> <text x="770" y="850" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="40" fill="#1f2328" stroke="none">自然选择跑步机</text>
+  </g>
+  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">DNA 健身房</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="书架很满，模型很瘦">
+  <rect width="1536" height="1024" fill="#f7f3ed"/>
+  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="260" y="200" width="430" height="540"/><path d="M260 330h430M260 470h430M260 610h430"/><path d="M310 210v120M370 210v120M455 210v120M535 210v120M610 210v120"/><circle cx="930" cy="350" r="55"/><path d="M930 405v210M850 485h160M930 615l-80 100M930 615l85 100"/><ellipse cx="930" cy="520" rx="95" ry="70"/><path d="M880 520h100" stroke="#d14b3f"/> <text x="930" y="533" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="32" fill="#d14b3f" stroke="none">空碗</text>
+  </g>
+  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">书架很满，模型很瘦</text>
+</svg>

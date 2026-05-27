@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="理解测谎仪">
+  <rect width="1536" height="1024" fill="#f7f3ed"/>
+  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="500" y="250" width="520" height="340" rx="34"/><circle cx="610" cy="360" r="42"/><path d="M700 350h210M700 430h170"/><path d="M620 590v120h310V590"/><path d="M585 710h380"/><circle cx="940" cy="320" r="28" fill="#d14b3f" stroke="none"/><text x="775" y="665" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="42" fill="#1f2328" stroke="none">预测下一步</text><path d="M360 640 q60-120 160-40"/><circle cx="350" cy="555" r="45"/><path d="M330 545h40M335 575q15 15 35 0"/>
+  </g>
+  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">理解测谎仪</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="模型健身计划">
+  <rect width="1536" height="1024" fill="#f7f3ed"/>
+  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="760" cy="470" r="68"/><path d="M760 540v150M685 605h150M760 690l-90 95M760 690l95 95"/><circle cx="410" cy="320" r="45"/><circle cx="590" cy="250" r="45"/><circle cx="950" cy="250" r="45"/><circle cx="1120" cy="320" r="45"/><circle cx="760" cy="170" r="45"/><text x="410" y="335" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#d14b3f" stroke="none">1</text><text x="590" y="265" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#d14b3f" stroke="none">2</text><text x="760" y="185" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#d14b3f" stroke="none">3</text><text x="950" y="265" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#d14b3f" stroke="none">4</text><text x="1120" y="335" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#d14b3f" stroke="none">5</text>
+  </g>
+  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">模型健身计划</text>
+</svg>

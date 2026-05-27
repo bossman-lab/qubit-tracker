@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="一句话长成合同">
+  <rect width="1536" height="1024" fill="#f7f3ed"/>
+  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M760 720 V430"/><path d="M760 520 C630 440 520 405 400 380M760 500 C900 410 1030 365 1160 330M760 610 C610 595 500 610 370 650M760 590 C910 610 1020 645 1160 700"/><rect x="290" y="315" width="170" height="95" rx="8"/><rect x="1080" y="270" width="180" height="110" rx="8"/><rect x="300" y="610" width="170" height="95" rx="8"/><rect x="1080" y="660" width="180" height="110" rx="8"/><circle cx="830" cy="530" r="34" fill="#d14b3f" stroke="none"/><text x="830" y="542" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="32" fill="white" stroke="none">印</text> <text x="760" y="800" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="42" fill="#1f2328" stroke="none">把房子租给你</text>
+  </g>
+  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">一句话长成合同</text>
+</svg>

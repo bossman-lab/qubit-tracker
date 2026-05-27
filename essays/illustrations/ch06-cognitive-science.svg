@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="大脑不是相册">
+  <rect width="1536" height="1024" fill="#f7f3ed"/>
+  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M670 370 C610 285 735 230 790 290 C870 210 990 285 950 380 C1035 410 1005 545 910 540 C870 625 735 610 725 525 C630 555 575 440 670 370z"/><rect x="250" y="520" width="260" height="150" rx="15"/><path d="M290 560h180M290 610h120"/><path d="M1050 470h220v150h-220zM1090 510l60 50 80-70"/><path d="M525 595 C650 700 900 700 1050 545" stroke="#d14b3f"/> <text x="380" y="475" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#1f2328" stroke="none">照片卡车</text><text x="1160" y="675" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#1f2328" stroke="none">结构草图</text>
+  </g>
+  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">大脑不是相册</text>
+</svg>

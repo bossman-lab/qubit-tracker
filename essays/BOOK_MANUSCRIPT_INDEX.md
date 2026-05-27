@@ -16,8 +16,8 @@
 | 7 | 第七章：个人成长 | `ch07-personal-growth.md` |
 | 8 | 第八章：涌现 | `ch08-emergence.md` |
 | 9 | 第九章：组织 | `ch09-organization.md` |
-| 10 | 法律：为什么文件这么长 | `ch15-law.md` |
-| 11 | 教育：模型对齐训练 | `ch10-education.md` |
+| 10 | 法律：为什么文件这么长 | `ch10-law.md` |
+| 11 | 教育：模型对齐训练 | `ch11-education.md` |
 | 12 | 翻译：跨模型通信的极限 | `ch12-translation.md` |
 | 13 | 软件工程：级联压缩的笑话 | `ch13-software-engineering.md` |
 | 14 | 人际沟通：悲欢相通是有成本的 | `ch14-interpersonal.md` |
@@ -30,6 +30,4 @@
 
 ## 待统一事项
 
-- `ch15-law.md` 的正文标题写作“第十五章”，但在 `book-structure.md` 中法律位于社会系统组，应放在第十章附近。
-- `ch10-education.md` 的正文标题写作“第十章”，但在 `book-structure.md` 中教育位于法律之后。
 - 后续整理正式书稿时，建议统一章节编号、文件名和目录标题。
