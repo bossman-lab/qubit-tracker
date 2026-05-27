@@ -1,7 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="理解测谎仪">
-  <rect width="1536" height="1024" fill="#f7f3ed"/>
-  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="500" y="250" width="520" height="340" rx="34"/><circle cx="610" cy="360" r="42"/><path d="M700 350h210M700 430h170"/><path d="M620 590v120h310V590"/><path d="M585 710h380"/><circle cx="940" cy="320" r="28" fill="#d14b3f" stroke="none"/><text x="775" y="665" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="42" fill="#1f2328" stroke="none">预测下一步</text><path d="M360 640 q60-120 160-40"/><circle cx="350" cy="555" r="45"/><path d="M330 545h40M335 575q15 15 35 0"/>
-  </g>
-  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">理解测谎仪</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="理解是什么意思">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="unknown" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="qGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <circle cx="768" cy="460" r="200" fill="url(#unknown)"/>
+
+  <!-- 大问号 -->
+  <text x="740" y="520" text-anchor="middle" font-family="'Georgia', serif" font-size="300" fill="url(#qGrad)" filter="url(#glow)" opacity="0.8">?</text>
+
+  <!-- 外部光晕环 -->
+  <circle cx="768" cy="460" r="160" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="768" cy="460" r="180" fill="none" stroke="#f59e0b" stroke-width="0.3" opacity="0.1"/>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">"理解"是什么意思</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 一 章</text>
 </svg>
