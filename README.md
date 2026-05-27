@@ -34,6 +34,11 @@ A living document repository following the most consequential technology race of
 
 - [France vs China: €500M, 5 Qubits, 1 Winner](analysis/france-china-quantum-race.md) — Full analysis of PROQCIMA, China's two tracks, cat qubits, and what computer history says about who wins (May 2026)
 
+## Book Drafts
+
+- [《压缩即理解》书稿索引](essays/BOOK_MANUSCRIPT_INDEX.md) — reading order for the manuscript draft and notes on chapter-number drift.
+- [《压缩即理解》完整结构](essays/book-structure.md) — original book architecture and chapter plan.
+
 ## How to Contribute
 
 Open an issue or PR if you spot a significant milestone I've missed. This tracker prioritizes:
