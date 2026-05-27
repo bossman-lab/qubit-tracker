@@ -1,7 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="秋千需求旅行记">
-  <rect width="1536" height="1024" fill="#f7f3ed"/>
-  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M345 260h160M425 260v430M345 690h160"/><path d="M585 260h160M665 260v430M585 690h160"/><path d="M825 260h160M905 260v430M825 690h160"/><path d="M1065 260h160M1145 260v430M1065 690h160"/><path d="M510 480h70M750 480h70M990 480h70" stroke="#d14b3f"/><rect x="1090" y="560" width="110" height="80"/><path d="M1110 560v-120M1180 560v-120"/><text x="425" y="220" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="32" fill="#1f2328" stroke="none">需求</text><text x="665" y="220" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="32" fill="#1f2328" stroke="none">设计</text><text x="905" y="220" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="32" fill="#1f2328" stroke="none">代码</text><text x="1145" y="220" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="32" fill="#1f2328" stroke="none">交付</text>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <linearGradient id="sigGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="25%" stop-color="#d97706"/>
+      <stop offset="50%" stop-color="#f43f5e"/>
+      <stop offset="75%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <!-- 秋千 -->
+  <g opacity="0.15">
+    <line x1="660" y1="200" x2="660" y2="650" stroke="#64748b" stroke-width="2"/>
+    <line x1="876" y1="200" x2="876" y2="650" stroke="#64748b" stroke-width="2"/>
+    <line x1="640" y1="620" x2="896" y2="620" stroke="#64748b" stroke-width="3"/>
+    <path d="M640 620 C660 580, 700 570, 730 590" stroke="#64748b" stroke-width="1.5" fill="none"/>
   </g>
-  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">秋千需求旅行记</text>
+
+  <!-- 信号失真链条 -->
+  <g filter="url(#glow)">
+    <!-- 需求 -->
+    <rect x="120" y="340" width="140" height="80" rx="8" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.5"/>
+    <text x="190" y="388" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#f59e0b">需求</text>
+
+    <!-- 文档 -->
+    <rect x="340" y="340" width="140" height="80" rx="8" fill="none" stroke="#d97706" stroke-width="1" opacity="0.5"/>
+    <text x="410" y="388" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#d97706">文档</text>
+
+    <!-- 设计 -->
+    <rect x="560" y="340" width="140" height="80" rx="8" fill="none" stroke="#f43f5e" stroke-width="1" opacity="0.5"/>
+    <text x="630" y="388" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#f43f5e">设计</text>
+
+    <!-- 代码 -->
+    <rect x="780" y="340" width="140" height="80" rx="8" fill="none" stroke="#9333ea" stroke-width="1" opacity="0.5"/>
+    <text x="850" y="388" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#9333ea">代码</text>
+
+    <!-- 产品 -->
+    <rect x="1000" y="340" width="140" height="80" rx="8" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.5"/>
+    <text x="1070" y="388" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#06b6d4">产品</text>
+  </g>
+
+  <!-- 连接箭头 -->
+  <path d="M260 380 L340 380" stroke="#475569" stroke-width="1" opacity="0.4"/>
+  <path d="M480 380 L560 380" stroke="#475569" stroke-width="1" opacity="0.4"/>
+  <path d="M700 380 L780 380" stroke="#475569" stroke-width="1" opacity="0.4"/>
+  <path d="M920 380 L1000 380" stroke="#475569" stroke-width="1" opacity="0.4"/>
+
+  <!-- 信号衰减视觉 -->
+  <line x1="140" y1="330" x2="140" y2="330" stroke="#f59e0b" stroke-width="4" opacity="0.8"/>
+  <line x1="360" y1="330" x2="360" y2="330" stroke="#d97706" stroke-width="3" opacity="0.5"/>
+  <line x1="580" y1="330" x2="580" y2="330" stroke="#f43f5e" stroke-width="2" opacity="0.35"/>
+  <line x1="800" y1="330" x2="800" y2="330" stroke="#9333ea" stroke-width="1.5" opacity="0.25"/>
+  <line x1="1020" y1="330" x2="1020" y2="330" stroke="#06b6d4" stroke-width="1" opacity="0.15"/>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">秋千需求旅行记</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 十 三 章 · 软 件 工 程</text>
 </svg>
