@@ -1,7 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="算力炼金炉">
-  <rect width="1536" height="1024" fill="#f7f3ed"/>
-  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M520 330h500l80 420H440z"/><path d="M610 330v-90h320v90"/><path d="M620 745 C660 650 735 635 770 720 C805 635 900 660 925 745" stroke="#d14b3f"/><path d="M250 420h210M1080 520h200"/><text x="350" y="390" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#1f2328" stroke="none">数据+电费</text><text x="1180" y="490" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="42" fill="#d14b3f" stroke="none">API</text>
-  </g>
-  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">算力炼金炉</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="压缩的成本">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="econGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <circle cx="768" cy="380" r="200" fill="url(#econGlow)"/>
+
+  <!-- 天平两端：数据 vs 算力 -->
+  <!-- 左侧：数据 -->
+  <rect x="340" y="420" width="180" height="100" rx="8" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <text x="430" y="470" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#f59e0b">数据</text>
+
+  <!-- 右侧：算力 -->
+  <rect x="1016" y="420" width="180" height="100" rx="8" fill="none" stroke="#f43f5e" stroke-width="1" opacity="0.4"/>
+  <text x="1106" y="470" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#f43f5e">算力</text>
+
+  <!-- 中间：成本 -->
+  <text x="768" y="380" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="28" fill="#f59e0b" filter="url(#glow)">成本</text>
+
+  <!-- 底部：个体 -->
+  <rect x="580" y="580" width="376" height="70" rx="10" fill="none" stroke="#06b6d4" stroke-width="0.8" opacity="0.35"/>
+  <text x="768" y="623" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#06b6d4">个体借用大规模压缩成果</text>
+
+  <!-- 连接线 -->
+  <line x1="520" y1="470" x2="580" y2="615" stroke="#f59e0b" stroke-width="0.5" opacity="0.2"/>
+  <line x1="1196" y1="470" x2="956" y2="615" stroke="#f43f5e" stroke-width="0.5" opacity="0.2"/>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">压缩的经济学</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 十 七 章</text>
 </svg>
