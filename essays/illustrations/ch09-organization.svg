@@ -1,12 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
-<title id="title">第九章：组织</title>
-<desc id="desc">层级不是墙，是一串会打折的信息翻译器。</desc>
-<defs>
-<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
-<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
-<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
-<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
-</defs>
-<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><circle class="fillPaper" cx="220" cy="435" r="24"/><path class="thin" d="M211 432.5 h1 M229 432.5 h1 M212 446 Q220 453 229 445"/><path class="ink" d="M220 460 v75"/><path class="ink" d="M220 487.5 C252.5 470 275 457.5 292.5 440"/><path class="ink" d="M220 535 l-35 47.5 M220 535 l37.5 47.5"/><rect class="fillPaper" x="310" y="350" width="140" height="120" rx="12"/><path class="red" d="M455 410 C497.5 330 497.5 490 540 410"/><path class="red" d="M512 394 L540 410 L512 426"/><rect class="wash" x="545" y="320" width="190" height="170" rx="26"/><path class="thin" d="M585 380 h105 M585 425 h80"/><path class="red" d="M740 410 C785 330 785 490 830 410"/><path class="red" d="M802 394 L830 410 L802 426"/><rect class="wash" x="835" y="320" width="190" height="170" rx="26"/><path class="thin" d="M875 375 h80 M875 425 h115"/><path class="red" d="M1030 410 C1075 330 1075 490 1120 410"/><path class="red" d="M1092 394 L1120 410 L1092 426"/><rect class="fillPaper" x="1130" y="330" width="170" height="190" rx="14"/><path class="red" d="M1165 395 C1215 340 1260 460 1290 390 C1265 510 1190 450 1160 495"/><text x="755" y="720" class="caption" text-anchor="middle">每一级都很努力，结果越来越艺术。</text></g><text x="768" y="940" class="title" text-anchor="middle">第九章：组织</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="级联压缩">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <linearGradient id="level1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="level2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="level3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <!-- 三个层级，逐级缩小 -->
+  <rect x="200" y="240" width="1136" height="160" rx="12" fill="url(#level1)" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <text x="220" y="340" text-anchor="start" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#f59e0b" opacity="0.6">一线</text>
+  <text x="1100" y="340" text-anchor="end" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="14" fill="#64748b">高维 · 原始信号</text>
+
+  <rect x="330" y="440" width="876" height="130" rx="10" fill="url(#level2)" stroke="#06b6d4" stroke-width="0.8" opacity="0.35"/>
+  <text x="350" y="520" text-anchor="start" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#06b6d4" opacity="0.5">管理层</text>
+
+  <rect x="520" y="610" width="496" height="100" rx="8" fill="url(#level3)" stroke="#f43f5e" stroke-width="0.8" opacity="0.3"/>
+  <text x="768" y="670" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#f43f5e" opacity="0.5">决策层</text>
+
+  <!-- 压缩箭头 -->
+  <path d="M768 400 L768 440" stroke="#475569" stroke-width="1" marker-end="none" opacity="0.3"/>
+  <path d="M768 570 L768 610" stroke="#475569" stroke-width="1" opacity="0.3"/>
+
+  <!-- 信号衰减粒子 -->
+  <circle cx="300" cy="300" r="4" fill="#f59e0b" opacity="0.6"/>
+  <circle cx="450" cy="310" r="3" fill="#f59e0b" opacity="0.4"/>
+  <circle cx="600" cy="295" r="2" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="750" cy="305" r="2" fill="#f59e0b" opacity="0.2"/>
+  <circle cx="900" cy="290" r="1.5" fill="#f59e0b" opacity="0.15"/>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">级联有损压缩</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 九 章 · 组 织</text>
 </svg>

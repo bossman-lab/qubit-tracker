@@ -1,12 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
-<title id="title">第十八章：五个练习</title>
-<desc id="desc">理解力也需要热身、负重和复盘。</desc>
-<defs>
-<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
-<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
-<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
-<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
-</defs>
-<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><circle class="fillPaper" cx="770" cy="430" r="31.200000000000003"/><path class="thin" d="M758.3 426.75 h1 M781.7 426.75 h1 M759.6 444.3 Q770 453.4 781.7 443"/><path class="ink" d="M770 462.5 v97.5"/><path class="ink" d="M727.75 498.25 C753.75 478.75 786.25 478.75 812.25 498.25"/><path class="ink" d="M770 560 l-45.5 61.75 M770 560 l48.75 61.75"/><circle class="wash" cx="360" cy="310" r="65"/><text x="360" y="310" class="label" text-anchor="middle">筛</text><circle class="wash" cx="570" cy="230" r="65"/><text x="570" y="230" class="label" text-anchor="middle">记</text><circle class="wash" cx="770" cy="180" r="65"/><text x="770" y="180" class="label" text-anchor="middle">调</text><circle class="wash" cx="970" cy="230" r="65"/><text x="970" y="230" class="label" text-anchor="middle">迁</text><circle class="wash" cx="1180" cy="310" r="65"/><text x="1180" y="310" class="label" text-anchor="middle">名</text><path class="red" d="M415 315 C505 420 600 430 705 430 M1130 315 C1030 420 940 430 835 430"/><rect class="fillPaper" x="650" y="565" width="240" height="120" rx="28"/><text x="770" y="625" class="label" text-anchor="middle">我的模型</text><path class="thin" d="M705 725 h130"/><text x="770" y="815" class="caption" text-anchor="middle">理解力的健身房，最难的是每天来。</text></g><text x="768" y="940" class="title" text-anchor="middle">第十八章：五个练习</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="五个练习">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <!-- 五角星/五边形 -->
+  <polygon points="768,260 1018,440 900,700 636,700 518,440" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+
+  <!-- 五个练习节点 -->
+  <g filter="url(#glow)">
+    <!-- 输入信噪比 -->
+    <circle cx="768" cy="260" r="24" fill="#f59e0b" opacity="0.08"/>
+    <text x="768" y="268" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="10" fill="#f59e0b">信噪比</text>
+
+    <!-- 预测日志 -->
+    <circle cx="1018" cy="440" r="24" fill="#06b6d4" opacity="0.08"/>
+    <text x="1018" y="448" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="10" fill="#06b6d4">预测</text>
+
+    <!-- 学习率 -->
+    <circle cx="900" cy="700" r="24" fill="#f43f5e" opacity="0.08"/>
+    <text x="900" y="708" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="10" fill="#f43f5e">学习率</text>
+
+    <!-- 跨域迁移 -->
+    <circle cx="636" cy="700" r="24" fill="#9333ea" opacity="0.08"/>
+    <text x="636" y="708" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="10" fill="#9333ea">跨域</text>
+
+    <!-- 命名仪式 -->
+    <circle cx="518" cy="440" r="24" fill="#f59e0b" opacity="0.08"/>
+    <text x="518" y="448" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="10" fill="#f59e0b">命名</text>
+  </g>
+
+  <!-- 序号 -->
+  <text x="760" y="360" text-anchor="middle" font-family="'Georgia', serif" font-size="80" fill="#f59e0b" opacity="0.06" filter="url(#glow)">5</text>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">五个练习</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 十 八 章</text>
 </svg>

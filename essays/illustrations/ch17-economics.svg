@@ -1,12 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
-<title id="title">第十七章：压缩的经济学</title>
-<desc id="desc">有人炼模型，有人借火。</desc>
-<defs>
-<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
-<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
-<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
-<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
-</defs>
-<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><path class="wash" d="M505 320 h520 l80 430 h-680 z"/><path class="ink" d="M610 320 v-90 h310 v90"/><path class="red" d="M610 735 C650 620 730 640 770 720 C815 620 900 650 930 735"/><path class="thin" d="M230 420 h220 M240 500 h210"/><text x="340" y="370" class="label" text-anchor="middle">数据</text><text x="340" y="548" class="label" text-anchor="middle">电费</text><path class="red" d="M1070 535 C1125 535 1180 535 1230 535"/><path class="fillPaper" d="M1240 500 h90 v110 h-90 z"/><text x="1285" y="555" class="label" text-anchor="middle">API</text><circle class="fillPaper" cx="1210" cy="690" r="40"/><text x="785" y="850" class="caption" text-anchor="middle">不是每个人都炼金，但可以借一点火。</text></g><text x="768" y="940" class="title" text-anchor="middle">第十七章：压缩的经济学</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="压缩的成本">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="econGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <circle cx="768" cy="380" r="200" fill="url(#econGlow)"/>
+
+  <!-- 天平两端：数据 vs 算力 -->
+  <!-- 左侧：数据 -->
+  <rect x="340" y="420" width="180" height="100" rx="8" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <text x="430" y="470" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#f59e0b">数据</text>
+
+  <!-- 右侧：算力 -->
+  <rect x="1016" y="420" width="180" height="100" rx="8" fill="none" stroke="#f43f5e" stroke-width="1" opacity="0.4"/>
+  <text x="1106" y="470" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#f43f5e">算力</text>
+
+  <!-- 中间：成本 -->
+  <text x="768" y="380" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="28" fill="#f59e0b" filter="url(#glow)">成本</text>
+
+  <!-- 底部：个体 -->
+  <rect x="580" y="580" width="376" height="70" rx="10" fill="none" stroke="#06b6d4" stroke-width="0.8" opacity="0.35"/>
+  <text x="768" y="623" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#06b6d4">个体借用大规模压缩成果</text>
+
+  <!-- 连接线 -->
+  <line x1="520" y1="470" x2="580" y2="615" stroke="#f59e0b" stroke-width="0.5" opacity="0.2"/>
+  <line x1="1196" y1="470" x2="956" y2="615" stroke="#f43f5e" stroke-width="0.5" opacity="0.2"/>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">压缩的经济学</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 十 七 章</text>
 </svg>

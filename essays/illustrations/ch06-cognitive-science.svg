@@ -1,12 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
-<title id="title">第六章：认知科学</title>
-<desc id="desc">大脑谢绝高清原片，只收可行动的草图。</desc>
-<defs>
-<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
-<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
-<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
-<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
-</defs>
-<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><path class="wash" d="M720 355 C650 260 800 210 850 295 C940 200 1080 285 1025 390 C1120 420 1080 565 975 555 C920 650 770 625 765 535 C660 590 590 445 720 355z"/><rect class="fillPaper" x="190" y="475" width="260" height="170" rx="18"/><path class="thin" d="M225 520 h190 M225 565 h150 M225 610 h175"/><text x="320" y="705" class="caption" text-anchor="middle">高清原片</text><rect class="fillPaper" x="1100" y="455" width="250" height="180" rx="18"/><path class="red" d="M1140 580 C1190 505 1240 565 1310 500"/><text x="1225" y="705" class="caption" text-anchor="middle">可行动草图</text><path class="red" d="M480 565 C600 690 930 690 1090 560"/><text x="835" y="215" class="caption" text-anchor="middle">大脑：太大，下一位。</text></g><text x="768" y="940" class="title" text-anchor="middle">第六章：认知科学</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="大脑不是存档机">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="brainGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <circle cx="768" cy="450" r="200" fill="url(#brainGlow)"/>
+
+  <!-- 大脑轮廓（简化抽象） -->
+  <path d="M560 400 C540 310, 620 250, 720 280 C760 290, 780 280, 820 270 C900 250, 970 310, 950 410 C940 460, 960 500, 940 550 C920 600, 880 620, 840 600 C780 580, 720 580, 660 600 C620 620, 590 600, 575 560 C560 520, 560 480, 560 400 Z" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- 脑内连接网络 -->
+  <g stroke="#f59e0b" stroke-width="0.5" opacity="0.25">
+    <line x1="640" y1="360" x2="720" y2="400"/>
+    <line x1="720" y1="400" x2="700" y2="480"/>
+    <line x1="700" y1="480" x2="850" y2="460"/>
+    <line x1="850" y1="460" x2="880" y2="380"/>
+    <line x1="880" y1="380" x2="800" y2="340"/>
+    <line x1="800" y1="340" x2="640" y2="360"/>
+    <line x1="700" y1="480" x2="780" y2="520"/>
+    <line x1="780" y1="520" x2="850" y2="460"/>
+  </g>
+
+  <!-- 量化光点 -->
+  <circle cx="640" cy="360" r="4" fill="#f59e0b" opacity="0.4"/>
+  <circle cx="720" cy="400" r="5" fill="#f59e0b" opacity="0.5"/>
+  <circle cx="700" cy="480" r="4" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="850" cy="460" r="5" fill="#06b6d4" opacity="0.4"/>
+  <circle cx="880" cy="380" r="4" fill="#06b6d4" opacity="0.3"/>
+  <circle cx="800" cy="340" r="3" fill="#f59e0b" opacity="0.4"/>
+  <circle cx="780" cy="520" r="3" fill="#06b6d4" opacity="0.3"/>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">大脑不是存档机</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 六 章 · 认 知 科 学</text>
 </svg>

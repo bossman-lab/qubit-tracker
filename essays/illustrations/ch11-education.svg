@@ -1,12 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
-<title id="title">第十一章：教育</title>
-<desc id="desc">好老师不是扩音器，是实时调参师。</desc>
-<defs>
-<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
-<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
-<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
-<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
-</defs>
-<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><circle class="fillPaper" cx="300" cy="390" r="31.200000000000003"/><path class="thin" d="M288.3 386.75 h1 M311.7 386.75 h1 M289.6 404.3 Q300 413.4 311.7 403"/><path class="ink" d="M300 422.5 v97.5"/><path class="ink" d="M300 458.25 C342.25 435.5 371.5 419.25 394.25 396.5"/><path class="ink" d="M300 520 l-45.5 61.75 M300 520 l48.75 61.75"/><rect class="wash" x="500" y="300" width="610" height="360" rx="36"/><path class="thin" d="M565 400 h460 M565 500 h460 M565 600 h460"/><circle class="redFill" cx="675" cy="400" r="25"/><circle class="redFill" cx="895" cy="500" r="25"/><circle class="redFill" cx="610" cy="600" r="25"/><text x="805" y="250" class="label" text-anchor="middle">learning rate</text><circle class="fillPaper" cx="1240" cy="365" r="35"/><circle class="fillPaper" cx="1240" cy="485" r="35"/><circle class="fillPaper" cx="1240" cy="605" r="35"/><text x="805" y="765" class="caption" text-anchor="middle">好老师不是把声音调大，而是把节奏调准。</text></g><text x="768" y="940" class="title" text-anchor="middle">第十一章：教育</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="老师调学习率">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="teachGlow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="connGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <circle cx="768" cy="380" r="200" fill="url(#teachGlow)"/>
+
+  <!-- 两个大脑轮廓——师生对齐 -->
+  <!-- 老师 -->
+  <circle cx="550" cy="400" r="60" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <g fill="#f59e0b" opacity="0.5">
+    <circle cx="530" cy="390" r="3"/>
+    <circle cx="555" cy="385" r="3"/>
+    <circle cx="545" cy="405" r="2"/>
+    <circle cx="560" cy="400" r="2"/>
+    <circle cx="540" cy="415" r="2"/>
+  </g>
+  <text x="550" y="485" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#f59e0b" opacity="0.6">老师</text>
+
+  <!-- 学生 -->
+  <circle cx="986" cy="400" r="60" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.4"/>
+  <g fill="#06b6d4" opacity="0.4">
+    <circle cx="970" cy="395" r="2"/>
+    <circle cx="990" cy="388" r="2"/>
+    <circle cx="980" cy="410" r="2"/>
+    <circle cx="1000" cy="405" r="2"/>
+  </g>
+  <text x="986" y="485" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#06b6d4" opacity="0.6">学生</text>
+
+  <!-- 对齐连接 -->
+  <path d="M610 390 C700 370, 860 370, 926 390" stroke="url(#connGrad)" stroke-width="1.5" fill="none" filter="url(#glow)"/>
+  <path d="M610 410 C700 430, 860 430, 926 410" stroke="url(#connGrad)" stroke-width="1" opacity="0.4" fill="none"/>
+
+  <!-- 比喻作为桥梁 -->
+  <text x="768" y="350" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="14" fill="#f59e0b" opacity="0.4">比喻：利用已有结构传输新结构</text>
+
+  <!-- 学习率滑条 -->
+  <rect x="620" y="580" width="296" height="8" rx="4" fill="#475569"/>
+  <circle cx="720" cy="584" r="8" fill="#f59e0b" filter="url(#glow)"/>
+  <text x="720" y="615" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="14" fill="#f59e0b" opacity="0.5">学习率</text>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">老师调学习率</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 十 一 章 · 教 育</text>
 </svg>

@@ -1,12 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
-<title id="title">第八章：涌现</title>
-<desc id="desc">第 37 手不是配方，是火候到了。</desc>
-<defs>
-<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
-<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
-<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
-<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
-</defs>
-<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><path class="wash" d="M470 525 h590 l-70 210 h-450 z"/><path class="ink" d="M420 525 h690"/><path class="thin" d="M555 455 C520 380 620 360 590 295 M760 455 C715 370 820 350 790 270 M960 455 C925 370 1030 355 1000 275"/><circle class="redFill" cx="770" cy="395" r="58"/><text x="770" y="397" class="label" text-anchor="middle">37</text><circle class="fillPaper" cx="650" cy="615" r="36"/><circle class="fillPaper" cx="875" cy="630" r="36"/><circle class="fillPaper" cx="310" cy="430" r="26.400000000000002"/><path class="thin" d="M300.1 427.25 h1 M319.9 427.25 h1 M301.2 442.1 Q310 449.8 319.9 441"/><path class="ink" d="M310 457.5 v82.5"/><path class="ink" d="M274.25 487.75 C296.25 471.25 323.75 471.25 345.75 487.75"/><path class="ink" d="M310 540 l-38.5 52.25000000000001 M310 540 l41.25 52.25000000000001"/><text x="770" y="805" class="caption" text-anchor="middle">创造力没有说明书，只有火候。</text></g><text x="768" y="940" class="title" text-anchor="middle">第八章：涌现</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="第 37 手从锅里冒出来">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="eruptGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.15"/>
+      <stop offset="40%" stop-color="#f43f5e" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.4"/>
+      <stop offset="80%" stop-color="#f43f5e" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#fef3c7" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <circle cx="768" cy="420" r="200" fill="url(#eruptGlow)"/>
+
+  <!-- 涌现的火焰/光柱 -->
+  <path d="M550 550 C580 480, 600 400, 650 350 C680 320, 720 300, 768 280 C816 300, 856 320, 886 350 C936 400, 956 480, 986 550 Z" fill="url(#flame)" filter="url(#glow)"/>
+
+  <!-- 星点 -->
+  <circle cx="700" cy="320" r="3" fill="#fef3c7" opacity="0.8"/>
+  <circle cx="830" cy="340" r="2" fill="#fef3c7" opacity="0.6"/>
+  <circle cx="760" cy="260" r="4" fill="#fef3c7" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="650" cy="380" r="2" fill="#f59e0b" opacity="0.5"/>
+  <circle cx="880" cy="390" r="2" fill="#f59e0b" opacity="0.5"/>
+
+  <!-- 底部压缩层 -->
+  <rect x="520" y="550" width="496" height="80" rx="8" fill="none" stroke="#475569" stroke-width="1" opacity="0.4"/>
+  <text x="768" y="597" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#475569">大量压缩</text>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">第 37 手从锅里冒出来</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 八 章 · 涌 现</text>
 </svg>

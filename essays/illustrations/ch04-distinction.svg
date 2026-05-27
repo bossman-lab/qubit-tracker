@@ -1,12 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
-<title id="title">第四章：区分</title>
-<desc id="desc">档案柜记得一切，却不会自己开门。</desc>
-<defs>
-<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
-<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
-<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
-<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
-</defs>
-<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><rect class="wash" x="180" y="170" width="440" height="560" rx="34"/><path class="ink" d="M180 310 h440 M180 450 h440 M180 590 h440"/><path class="thin" d="M360 245 q40 -25 80 0 M355 525 q45 35 90 0"/><text x="400" y="795" class="label" text-anchor="middle">全都记得</text><path class="ink" d="M790 710 h470 v-170 h-470 z"/><path class="ink" d="M880 540 v-120 h280 v120"/><circle class="fillPaper" cx="955" cy="390" r="26.400000000000002"/><path class="thin" d="M945.1 387.25 h1 M964.9 387.25 h1 M946.2 402.1 Q955 409.8 964.9 401"/><path class="ink" d="M955 417.5 v82.5"/><path class="ink" d="M955 447.75 C990.75 428.5 1015.5 414.75 1034.75 395.5"/><path class="ink" d="M955 500 l-38.5 52.25000000000001 M955 500 l41.25 52.25000000000001"/><rect class="wash" x="990" y="610" width="180" height="120" rx="28"/><path class="ink" d="M1026 610 v-62 h108 v62"/><path class="thin" d="M1080 628 v84"/><text x="1080" y="678" class="label" text-anchor="middle">钥匙</text><text x="1030" y="795" class="label" text-anchor="middle">但会开门</text><path class="red" d="M690 620 C760 610 795 605 845 610"/></g><text x="768" y="940" class="title" text-anchor="middle">第四章：区分</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="存档与理解">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <linearGradient id="zipGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="brainGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 四 章 · 存 档 · 知 识 · 理 解</text>
+
+  <!-- 左侧：存档（zip文件） -->
+  <rect x="280" y="300" width="160" height="190" rx="12" fill="url(#zipGrad)" stroke="#475569" stroke-width="1"/>
+  <line x1="320" y1="330" x2="400" y2="330" stroke="#64748b" stroke-width="2"/>
+  <line x1="320" y1="350" x2="380" y2="350" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="320" y1="370" x2="390" y2="370" stroke="#64748b" stroke-width="1.5"/>
+  <path d="M370 300 L370 270 L440 270 L440 300" stroke="#475569" stroke-width="1.5" fill="none"/>
+  <text x="360" y="520" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="20" fill="#64748b">存档</text>
+
+  <!-- 中间：知识 -->
+  <rect x="660" y="280" width="200" height="230" rx="16" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <circle cx="760" cy="340" r="16" fill="#f59e0b" opacity="0.15"/>
+  <circle cx="700" cy="390" r="12" fill="#06b6d4" opacity="0.12"/>
+  <circle cx="810" cy="380" r="14" fill="#f59e0b" opacity="0.1"/>
+  <circle cx="730" cy="440" r="10" fill="#06b6d4" opacity="0.15"/>
+  <circle cx="790" cy="430" r="8" fill="#f59e0b" opacity="0.08"/>
+  <text x="760" y="540" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="20" fill="#f59e0b">知识</text>
+
+  <!-- 右侧：理解 —— 发光 -->
+  <circle cx="1240" cy="395" r="80" fill="url(#brainGrad)"/>
+  <circle cx="1240" cy="395" r="60" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.5" filter="url(#glow)"/>
+  <circle cx="1240" cy="395" r="40" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.3"/>
+  <text x="1240" y="540" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="20" fill="#fef3c7">理解</text>
+
+  <!-- 箭头连接 -->
+  <path d="M440 395 C520 395, 580 395, 660 395" stroke="#475569" stroke-width="1" stroke-dasharray="4,4" fill="none" opacity="0.3"/>
+  <path d="M860 395 C980 395, 1060 395, 1160 395" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4,4" fill="none" opacity="0.3"/>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">存档 ≠ 知识 ≠ 理解</text>
 </svg>

@@ -1,12 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
-<title id="title">第三章：假设</title>
-<desc id="desc">真正的模型会漏掉细节，却不漏掉方向。</desc>
-<defs>
-<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
-<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
-<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
-<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
-</defs>
-<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><circle class="fillPaper" cx="560" cy="390" r="40.8"/><path class="thin" d="M544.7 385.75 h1 M575.3 385.75 h1 M546.4 408.7 Q560 420.6 575.3 407"/><path class="ink" d="M560 432.5 v127.5"/><path class="ink" d="M504.75 479.25 C538.75 453.75 581.25 453.75 615.25 479.25"/><path class="ink" d="M560 560 l-59.5 80.75 M560 560 l63.75 80.75"/><rect class="wash" x="420" y="445" width="160" height="180" rx="40"/><path class="thin" d="M425 520 C350 540 320 615 300 690 M520 625 C490 720 430 765 370 810"/><circle class="redFill" cx="310" cy="690" r="12"/><circle class="redFill" cx="370" cy="810" r="10"/><path class="wash" d="M900 280 l260 55 -60 300 -280 -60 z"/><path class="red" d="M940 530 C1015 450 1070 420 1135 360"/><circle class="redFill" cx="1135" cy="360" r="18"/><text x="1035" y="700" class="caption" text-anchor="middle">细节漏了一路，方向居然没错。</text></g><text x="768" y="940" class="title" text-anchor="middle">第三章：假设</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="假设的三个条件">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <circle cx="768" cy="480" r="300" fill="url(#centerGlow)"/>
+
+  <!-- 三个圆环，代表三个必要条件 -->
+  <circle cx="530" cy="420" r="100" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.6" filter="url(#glow)"/>
+  <text x="530" y="428" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#f59e0b">压缩</text>
+
+  <circle cx="768" cy="320" r="100" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.6" filter="url(#glow)"/>
+  <text x="768" y="328" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#06b6d4">预测</text>
+
+  <circle cx="1006" cy="420" r="100" fill="none" stroke="#f43f5e" stroke-width="1.5" opacity="0.6" filter="url(#glow)"/>
+  <text x="1006" y="428" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#f43f5e">范围</text>
+
+  <!-- 三个圆的交集区域 -->
+  <path d="M530 420 A 100 100 0 0 1 768 320 A 100 100 0 0 1 1006 420 A 100 100 0 0 1 768 520 A 100 100 0 0 1 530 420 Z" fill="#f59e0b" opacity="0.05"/>
+
+  <!-- 中心"理解" -->
+  <text x="768" y="485" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="24" fill="#fef3c7" filter="url(#glow)">理解</text>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">理解 = 压缩 + 预测 + 范围</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 三 章 · H1 假 设</text>
 </svg>

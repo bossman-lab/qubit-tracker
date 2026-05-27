@@ -1,12 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
-<title id="title">第五章：AI史</title>
-<desc id="desc">技术路线轮流上场，接力棒越来越小，野心越来越大。</desc>
-<defs>
-<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
-<filter id="softShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#6b5a44" flood-opacity="0.15"/></filter>
-<pattern id="paperGrain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1.2" fill="#dccdb8" opacity=".25"/><circle cx="57" cy="31" r="1" fill="#dccdb8" opacity=".25"/><circle cx="36" cy="67" r="1.1" fill="#dccdb8" opacity=".22"/></pattern>
-<style>.ink{fill:none;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.thin{fill:none;stroke:#202124;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.red{fill:none;stroke:#c74335;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.fillPaper{fill:#fbf7ef;stroke:#202124;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}.wash{fill:#eee3d3;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.redFill{fill:#c74335;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.blueFill{fill:#3e6f8f;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.greenFill{fill:#5f7f53;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}.goldFill{fill:#b88a36;stroke:#202124;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;filter:url(#wobble)}text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#202124;dominant-baseline:middle}.caption{font-size:30px}.small{font-size:24px}.label{font-size:34px;font-weight:700}.title{font-size:46px;font-weight:700}</style>
-</defs>
-<rect width="1536" height="1024" fill="#fbf7ef"/><rect width="1536" height="1024" fill="url(#paperGrain)"/><g><path class="thin" d="M160 760 h1210"/><circle class="fillPaper" cx="260" cy="430" r="26.400000000000002"/><path class="thin" d="M250.1 427.25 h1 M269.9 427.25 h1 M251.2 442.1 Q260 449.8 269.9 441"/><path class="ink" d="M260 457.5 v82.5"/><path class="ink" d="M260 487.75 C295.75 468.5 320.5 454.75 339.75 435.5"/><path class="ink" d="M260 540 l-38.5 52.25000000000001 M260 540 l41.25 52.25000000000001"/><circle class="fillPaper" cx="520" cy="420" r="26.400000000000002"/><path class="thin" d="M510.1 417.25 h1 M529.9 417.25 h1 M511.2 432.1 Q520 439.8 529.9 431"/><path class="ink" d="M520 447.5 v82.5"/><path class="ink" d="M520 477.75 C555.75 458.5 580.5 444.75 599.75 425.5"/><path class="ink" d="M520 530 l-38.5 52.25000000000001 M520 530 l41.25 52.25000000000001"/><circle class="fillPaper" cx="790" cy="420" r="26.400000000000002"/><path class="thin" d="M780.1 417.25 h1 M799.9 417.25 h1 M781.2 432.1 Q790 439.8 799.9 431"/><path class="ink" d="M790 447.5 v82.5"/><path class="ink" d="M790 477.75 C825.75 458.5 850.5 444.75 869.75 425.5"/><path class="ink" d="M790 530 l-38.5 52.25000000000001 M790 530 l41.25 52.25000000000001"/><circle class="fillPaper" cx="1060" cy="410" r="26.400000000000002"/><path class="thin" d="M1050.1 407.25 h1 M1069.9 407.25 h1 M1051.2 422.1 Q1060 429.8 1069.9 421"/><path class="ink" d="M1060 437.5 v82.5"/><path class="ink" d="M1060 467.75 C1095.75 448.5 1120.5 434.75 1139.75 415.5"/><path class="ink" d="M1060 520 l-38.5 52.25000000000001 M1060 520 l41.25 52.25000000000001"/><rect class="redFill" x="360" y="480" width="80" height="45" rx="10"/><rect class="redFill" x="625" y="465" width="62" height="40" rx="10"/><rect class="redFill" x="890" y="445" width="48" height="34" rx="9"/><rect class="redFill" x="1152" y="425" width="36" height="28" rx="8"/><text x="260" y="270" class="label" text-anchor="middle">规则</text><text x="520" y="270" class="label" text-anchor="middle">数据</text><text x="790" y="270" class="label" text-anchor="middle">架构</text><text x="1060" y="270" class="label" text-anchor="middle">语言模型</text><text x="765" y="830" class="caption" text-anchor="middle">接力棒越来越小，能跑的世界越来越大。</text></g><text x="768" y="940" class="title" text-anchor="middle">第五章：AI史</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="压缩接力赛">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <linearGradient id="pathGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.1"/>
+      <stop offset="25%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#f43f5e"/>
+      <stop offset="75%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <!-- 时间线 -->
+  <line x1="180" y1="520" x2="1360" y2="520" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- 四个时代节点 -->
+  <g filter="url(#glow)">
+    <!-- 规则派 1950s -->
+    <circle cx="330" cy="520" r="30" fill="#f59e0b" opacity="0.15"/>
+    <text x="330" y="528" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#f59e0b">规则</text>
+    <text x="330" y="420" text-anchor="middle" font-family="'Noto Serif SC', sans-serif" font-size="14" fill="#475569">1950s</text>
+    <!-- 连接向上 -->
+    <path d="M330 490 C330 440, 480 440, 480 490" stroke="#f59e0b" stroke-width="0.5" fill="none" opacity="0.3"/>
+
+    <!-- 数据派 1980s -->
+    <circle cx="600" cy="520" r="30" fill="#d97706" opacity="0.15"/>
+    <text x="600" y="528" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#d97706">数据</text>
+    <text x="600" y="420" text-anchor="middle" font-family="'Noto Serif SC', sans-serif" font-size="14" fill="#475569">1986</text>
+
+    <!-- 深度学习 2012 -->
+    <circle cx="870" cy="520" r="30" fill="#f43f5e" opacity="0.15"/>
+    <text x="870" y="528" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#f43f5e">深度</text>
+    <text x="870" y="420" text-anchor="middle" font-family="'Noto Serif SC', sans-serif" font-size="14" fill="#475569">2012</text>
+
+    <!-- LLM 2020s -->
+    <circle cx="1140" cy="520" r="30" fill="#06b6d4" opacity="0.15"/>
+    <text x="1140" y="528" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#06b6d4">LLM</text>
+    <text x="1140" y="420" text-anchor="middle" font-family="'Noto Serif SC', sans-serif" font-size="14" fill="#475569">2022</text>
+  </g>
+
+  <!-- 压缩率上升曲线 -->
+  <path d="M330 540 C400 480, 500 460, 600 450 C700 440, 800 430, 870 420 C940 410, 1040 390, 1140 370" fill="none" stroke="url(#pathGrad)" stroke-width="2" filter="url(#glow)"/>
+
+  <!-- 上升箭头标注 -->
+  <text x="1250" y="360" text-anchor="start" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#f59e0b" opacity="0.6">压缩率 →</text>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">压缩接力赛</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 五 章 · 七 十 五 年 AI 史</text>
 </svg>
