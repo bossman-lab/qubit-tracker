@@ -1,7 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="模型健身计划">
-  <rect width="1536" height="1024" fill="#f7f3ed"/>
-  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="760" cy="470" r="68"/><path d="M760 540v150M685 605h150M760 690l-90 95M760 690l95 95"/><circle cx="410" cy="320" r="45"/><circle cx="590" cy="250" r="45"/><circle cx="950" cy="250" r="45"/><circle cx="1120" cy="320" r="45"/><circle cx="760" cy="170" r="45"/><text x="410" y="335" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#d14b3f" stroke="none">1</text><text x="590" y="265" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#d14b3f" stroke="none">2</text><text x="760" y="185" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#d14b3f" stroke="none">3</text><text x="950" y="265" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#d14b3f" stroke="none">4</text><text x="1120" y="335" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#d14b3f" stroke="none">5</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="五个练习">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <!-- 五角星/五边形 -->
+  <polygon points="768,260 1018,440 900,700 636,700 518,440" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+
+  <!-- 五个练习节点 -->
+  <g filter="url(#glow)">
+    <!-- 输入信噪比 -->
+    <circle cx="768" cy="260" r="24" fill="#f59e0b" opacity="0.08"/>
+    <text x="768" y="268" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="10" fill="#f59e0b">信噪比</text>
+
+    <!-- 预测日志 -->
+    <circle cx="1018" cy="440" r="24" fill="#06b6d4" opacity="0.08"/>
+    <text x="1018" y="448" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="10" fill="#06b6d4">预测</text>
+
+    <!-- 学习率 -->
+    <circle cx="900" cy="700" r="24" fill="#f43f5e" opacity="0.08"/>
+    <text x="900" y="708" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="10" fill="#f43f5e">学习率</text>
+
+    <!-- 跨域迁移 -->
+    <circle cx="636" cy="700" r="24" fill="#9333ea" opacity="0.08"/>
+    <text x="636" y="708" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="10" fill="#9333ea">跨域</text>
+
+    <!-- 命名仪式 -->
+    <circle cx="518" cy="440" r="24" fill="#f59e0b" opacity="0.08"/>
+    <text x="518" y="448" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="10" fill="#f59e0b">命名</text>
   </g>
-  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">模型健身计划</text>
+
+  <!-- 序号 -->
+  <text x="760" y="360" text-anchor="middle" font-family="'Georgia', serif" font-size="80" fill="#f59e0b" opacity="0.06" filter="url(#glow)">5</text>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">五个练习</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 十 八 章</text>
 </svg>
