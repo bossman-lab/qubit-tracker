@@ -1,7 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="层级复印机">
-  <rect width="1536" height="1024" fill="#f7f3ed"/>
-  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="230" y="350" width="240" height="170" rx="20"/><rect x="520" y="350" width="240" height="170" rx="20"/><rect x="810" y="350" width="240" height="170" rx="20"/><rect x="1110" y="320" width="180" height="230" rx="14"/><path d="M470 435h50M760 435h50M1050 435h60"/><path d="M1140 390 C1190 350 1230 460 1270 420 C1240 500 1170 460 1140 510" stroke="#d14b3f"/> <text x="350" y="580" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#1f2328" stroke="none">清晰</text><text x="1200" y="610" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#1f2328" stroke="none">抽象艺术</text>
-  </g>
-  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">层级复印机</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="级联压缩">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <linearGradient id="level1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="level2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="level3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <!-- 三个层级，逐级缩小 -->
+  <rect x="200" y="240" width="1136" height="160" rx="12" fill="url(#level1)" stroke="#f59e0b" stroke-width="0.8" opacity="0.4"/>
+  <text x="220" y="340" text-anchor="start" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#f59e0b" opacity="0.6">一线</text>
+  <text x="1100" y="340" text-anchor="end" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="14" fill="#64748b">高维 · 原始信号</text>
+
+  <rect x="330" y="440" width="876" height="130" rx="10" fill="url(#level2)" stroke="#06b6d4" stroke-width="0.8" opacity="0.35"/>
+  <text x="350" y="520" text-anchor="start" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#06b6d4" opacity="0.5">管理层</text>
+
+  <rect x="520" y="610" width="496" height="100" rx="8" fill="url(#level3)" stroke="#f43f5e" stroke-width="0.8" opacity="0.3"/>
+  <text x="768" y="670" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="16" fill="#f43f5e" opacity="0.5">决策层</text>
+
+  <!-- 压缩箭头 -->
+  <path d="M768 400 L768 440" stroke="#475569" stroke-width="1" marker-end="none" opacity="0.3"/>
+  <path d="M768 570 L768 610" stroke="#475569" stroke-width="1" opacity="0.3"/>
+
+  <!-- 信号衰减粒子 -->
+  <circle cx="300" cy="300" r="4" fill="#f59e0b" opacity="0.6"/>
+  <circle cx="450" cy="310" r="3" fill="#f59e0b" opacity="0.4"/>
+  <circle cx="600" cy="295" r="2" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="750" cy="305" r="2" fill="#f59e0b" opacity="0.2"/>
+  <circle cx="900" cy="290" r="1.5" fill="#f59e0b" opacity="0.15"/>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">级联有损压缩</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 九 章 · 组 织</text>
 </svg>
