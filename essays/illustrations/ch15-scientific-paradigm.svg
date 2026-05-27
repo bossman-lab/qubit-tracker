@@ -1,7 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="旧架构搬家">
-  <rect width="1536" height="1024" fill="#f7f3ed"/>
-  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="440" cy="350" r="50"/><path d="M440 400v230M390 490h100M440 630l-80 100M440 630l90 100"/><rect x="620" y="260" width="420" height="300" rx="20"/><path d="M620 360h420M745 260v300"/><path d="M1080 250h170v480h-170"/><path d="M1080 250v480" stroke="#d14b3f"/> <text x="830" y="620" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="38" fill="#1f2328" stroke="none">旧架构家具</text><text x="1165" y="780" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" fill="#1f2328" stroke="none">新模型</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="范式转移是换架构">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="burstGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.12"/>
+      <stop offset="40%" stop-color="#f43f5e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <circle cx="768" cy="400" r="220" fill="url(#burstGlow)"/>
+
+  <!-- 旧架构——破碎 -->
+  <path d="M500 300 L580 480 L420 480 Z" fill="none" stroke="#475569" stroke-width="1" opacity="0.3"/>
+  <path d="M500 300 L580 480" stroke="#475569" stroke-width="0.5" opacity="0.15"/>
+  <line x1="480" y1="400" x2="520" y2="400" stroke="#f43f5e" stroke-width="1" opacity="0.3"/>
+
+  <!-- 爆炸/相变 -->
+  <circle cx="768" cy="400" r="100" fill="none" stroke="#f59e0b" stroke-width="0.8" opacity="0.2"/>
+  <circle cx="768" cy="400" r="60" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- 粒子飞散 -->
+  <g fill="#f59e0b" opacity="0.4">
+    <circle cx="620" cy="340" r="2"/>
+    <circle cx="650" cy="300" r="1.5"/>
+    <circle cx="700" cy="280" r="2"/>
+    <circle cx="780" cy="270" r="1.5"/>
+    <circle cx="840" cy="300" r="2"/>
+    <circle cx="880" cy="330" r="1.5"/>
+    <circle cx="680" cy="460" r="1.5"/>
+    <circle cx="740" cy="480" r="2"/>
+    <circle cx="820" cy="470" r="1.5"/>
+    <circle cx="870" cy="450" r="2"/>
   </g>
-  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">旧架构搬家</text>
+
+  <!-- "X" 标记旧范式不再适用 -->
+  <g stroke="#f43f5e" stroke-width="2" opacity="0.4">
+    <line x1="550" y1="290" x2="600" y2="340"/>
+    <line x1="600" y1="290" x2="550" y2="340"/>
+  </g>
+
+  <!-- 新架构——发光 -->
+  <circle cx="920" cy="400" r="40" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.5" filter="url(#glow)"/>
+  <circle cx="920" cy="400" r="25" fill="#06b6d4" opacity="0.08"/>
+  <circle cx="920" cy="400" r="15" fill="#06b6d4" opacity="0.12"/>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">范式转移是模型架构的重构</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">第 十 五 章 · 科 学 范 式 转 移</text>
 </svg>
