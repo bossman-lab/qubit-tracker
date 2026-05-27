@@ -1,7 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="信号来临前">
-  <rect width="1536" height="1024" fill="#f7f3ed"/>
-  <g fill="none" stroke="#1f2328" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="520" cy="450" r="55"/><path d="M520 505v170M455 585h130M520 675l-80 90M520 675l90 90"/><rect x="680" y="475" width="220" height="145" rx="22"/><path d="M735 475v-60h110v60"/><circle cx="1110" cy="310" r="30" fill="#d14b3f" stroke="none"/><path d="M1070 350 C1020 410 965 470 910 525"/><path d="M1160 300 C1210 250 1270 230 1330 235"/><text x="790" y="675" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="38" fill="#1f2328" stroke="none">调参中</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-label="黎明之前">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <linearGradient id="horizon" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.05"/>
+      <stop offset="70%" stop-color="#f43f5e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.15"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.15"/>
+      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <!-- 地平线 -->
+  <rect x="0" y="550" width="1536" height="474" fill="url(#horizon)"/>
+
+  <!-- 即将升起的太阳 -->
+  <circle cx="768" cy="620" r="120" fill="url(#sunGlow)"/>
+  <circle cx="768" cy="620" r="60" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.3" filter="url(#glow)"/>
+  <circle cx="768" cy="620" r="80" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- 地平线光芒 -->
+  <line x1="400" y1="550" x2="1136" y2="550" stroke="#f59e0b" stroke-width="0.5" opacity="0.3" filter="url(#glow)"/>
+
+  <!-- 前方的人 -->
+  <g transform="translate(768, 480)" opacity="0.2">
+    <circle cx="0" cy="-40" r="10" fill="none" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="0" y1="-30" x2="0" y2="15" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="0" y1="-5" x2="-15" y2="5" stroke="#f59e0b" stroke-width="0.8"/>
+    <line x1="0" y1="-5" x2="15" y2="5" stroke="#f59e0b" stroke-width="0.8"/>
+    <line x1="0" y1="15" x2="-10" y2="35" stroke="#f59e0b" stroke-width="0.8"/>
+    <line x1="0" y1="15" x2="10" y2="35" stroke="#f59e0b" stroke-width="0.8"/>
   </g>
-  <text x="768" y="940" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="44" fill="#1f2328">信号来临前</text>
+
+  <text x="768" y="900" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="36" fill="#94a3b8" letter-spacing="4">持续迭代自己的压缩算法</text>
+  <text x="768" y="940" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" fill="#475569" letter-spacing="6">终 章</text>
 </svg>
